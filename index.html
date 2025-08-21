@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jaguares Aztecas</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- Splash de carga -->
+	<div id="splash">
+		<img id="splash-logo" src="assets/logo.png" alt="Logo Jaguares Aztecas">
+	</div>
+
+	<!-- Menú principal -->
+	   <div id="main-menu">
+		   <div id="inicio"></div>
+		<nav>
+			<div class="nav-logo">
+				<img src="assets/logo_simplificado.png" alt="Logo Simplificado" class="logo-simplificado">
+			</div>
+			<div class="nav-links">
+				   <a href="#video-section">Inicio</a>
+				   <a href="#calendar-section">Calendario</a>
+				   <a href="#ubicacion-section">Ubicación</a>
+				   <a href="#costos-section">Costos</a>
+				   <a href="#contacto-section">Contacto</a>
+	<!-- Si deseas una sección de galería, agrégala aquí -->
+	<!-- <section id="galeria">Galería de fotos y videos próximamente...</section> -->
+			</div>
+		</nav>
+		<section id="video-section">
+			<div class="video-container">
+				<!-- Puedes reemplazar el src por el video real -->
+				<video id="promo-video" width="560" height="315" controls poster="assets/logo.png">
+					<source src="" type="video/mp4">
+					Tu navegador no soporta la reproducción de video.
+				</video>
+			</div>
+			<div class="video-caption-container">
+				<div class="video-caption">Conoce Jaguares Aztecas</div>
+			   </div>
+		   </section>
+		<section id="presentation-section">
+			<div class="presentation-title">
+				<img src="assets/logo_texto.png" alt="Jaguares Aztecas" class="presentation-logo-text">
+			   </div>
+			<div class="presentation-desc">
+				Unidos por la pasión, la garra y el orgullo. Jaguares Aztecas es más que un equipo. Es una familia que deja huella en cada jugada. ¡Descubre la fuerza que nos distingue!
+			</div>
+		   </section>
+
+		   </section>
+		<section id="calendar-section">
+			<div class="calendar-title-container">
+				<div class="calendar-title">Calendario de Entrenamientos</div>
+			</div>
+			<table class="calendar-table">
+				<thead>
+					<tr>
+						<th>Día</th>
+						<th>Horario</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Miércoles</td>
+						<td>3:00 pm - 4:30 pm</td>
+					</tr>
+					<tr>
+						<td>Viernes</td>
+						<td>9:00 am - 10:30 am</td>
+					</tr>
+					<tr>
+						<td>Sábado</td>
+						<td>4:00 pm - 6:00 pm</td>
+					</tr>
+				</tbody>
+			</table>
+		   </section>
+		   <section id="ubicacion-section">
+			   <div class="ubicacion-title-container">
+				   <div class="ubicacion-title">Ubicación de la Cancha</div>
+			   </div>
+			   <div class="ubicacion-mapa-flex">
+				   <div class="ubicacion-mapa-iframe">
+					   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6644.179700337789!2d-99.25284150261957!3d19.553238848537127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d7ed105e495%3A0x3451084f7ff69ac8!2sParque%20Emblema!5e1!3m2!1ses-419!2smx!4v1755813703131!5m2!1ses-419!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				   </div>
+				   <div class="ubicacion-mapa-texto">
+					   <strong>Dirección:</strong><br>
+					   <span>Petrel 199A, Las Alamedas, 52970 Cdad. López Mateos, Méx.</span>
+				   </div>
+			   </div>
+		   </section>
+		<section id="costos-section">
+			<div class="costos-title-container">
+				<div class="costos-title">Costos de Entrenamiento</div>
+			</div>
+			<div class="costos-cards">
+				<div class="costos-card">
+					<div class="costos-item">Mensualidad</div>
+					<div class="costos-precio">$550</div>
+				</div>
+				<div class="costos-card">
+					<div class="costos-item">Uniforme de entrenamiento</div>
+					<div class="costos-precio">$350</div>
+					<div class="costos-detalle">Incluye 2 playeras</div>
+				</div>
+				<div class="costos-card">
+					<div class="costos-item">Uniforme de partido</div>
+					<div class="costos-precio">Próximamente</div>
+				</div>
+			</div>
+            <section id="contacto-section">
+			   <div class="contacto-title-container">
+				   <div class="contacto-title">Contacto</div>
+			   </div>
+			   <div class="contacto-redes">
+				   <a class="contacto-icon whatsapp" href="https://wa.me/5215512345678" target="_blank" rel="noopener" title="WhatsApp">
+					   <img src="assets/WhatsApp.png" alt="WhatsApp" />
+					   WhatsApp
+				   </a>
+				   <a class="contacto-icon facebook" href="https://facebook.com/jaguaresaztecas" target="_blank" rel="noopener" title="Facebook">
+					   <img src="assets/Facebook.png" alt="Facebook" />
+					   Facebook
+				   </a>
+				   <a class="contacto-icon instagram" href="https://instagram.com/jaguaresaztecas" target="_blank" rel="noopener" title="Instagram">
+					   <img src="assets/Instagram.png" alt="Instagram" />
+					   Instagram
+				   </a>
+			   </div>
+		</section>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
