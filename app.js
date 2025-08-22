@@ -43,4 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			navOverlay.classList.remove('open');
 		});
 	}
+	// Reiniciar video al finalizar pero no reproducir automáticamente
+	const video = document.getElementById('promo-video');
+		if (video) {
+			video.addEventListener('ended', () => {
+				video.currentTime = 0;
+				video.pause();
+				// Forzar mostrar el poster
+				video.removeAttribute('src');
+				video.load();
+			});
+			// Al hacer play, restaurar el src si no existe
+			video.addEventListener('play', () => {
+				if (!video.src || video.src === window.location.href) {
+					video.src = video.querySelector('source').getAttribute('src');
+					video.load();
+					video.play();
+				}
+			});
+		}
 });
