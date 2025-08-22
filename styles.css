@@ -1,3 +1,80 @@
+/* Overlay para cerrar menú hamburguesa */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.15);
+  z-index: 99;
+}
+@media (max-width: 800px) {
+  .nav-overlay.open {
+    display: block;
+  }
+}
+nav {
+  position: relative;
+}
+/* Menú hamburguesa para móviles */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  margin-left: 16px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 4px 0;
+  background: #111;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 800px) {
+  .nav-links {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    max-width: 98vw;
+    width: 270px;
+    background: #fff7e0cc;
+    box-shadow: 0 2px 16px #ff990044;
+    border-radius: 12px 0 0 12px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 20px;
+    z-index: 9999;
+    align-items: flex-start;
+    margin-top: 8px;
+    overflow-x: auto;
+    word-break: break-word;
+  }
+  .nav-links a {
+    width: 100%;
+    text-align: left;
+    font-size: 1.15rem;
+    box-sizing: border-box;
+  }
+  .nav-links.open {
+    display: flex !important;
+  }
+  .nav-hamburger {
+    display: flex;
+    z-index: 10000;
+  }
+}
 /* Ajuste de scroll para anclas de menú */
 #video-section,
 #calendar-section,
